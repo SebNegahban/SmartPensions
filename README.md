@@ -1,5 +1,6 @@
 ## Usage
 Run `bundle install` to install the necessary gem dependencies.
+
 Then `./script/parser.rb <path_to_log_file>` to run the log file parser.
 The output from the parser will be put into the console window, and will be separated into two categories:
 * Total views
@@ -15,12 +16,14 @@ There are four main areas of the program:
 
 LogError was created to prevent other unexpected errors from being unintentionally caught.
 
-Rubocop has been installed to aid with linting. There are some known issues, including a couple of methods and blocks deemed too long,
-and a few lines with too many characters. It was deemed that these were acceptable 'issues' and that by 'fixing' them as rubocop recommended,
-it would make the code less readable and add unnecessary method calls.
+Rubocop has been installed to aid with linting. 
+There are some known issues, including a couple of methods and blocks deemed too long,
+and a few lines with too many characters. It was deemed that these were acceptable issues and that by fixing them as rubocop recommended,
+it would make the code less readable and add unnecessary method calls.  If deemed necessary by code review, these can be easily rectified.
 
 ## Testing
 Automated tests are written with RSpec and can be run using `bundle exec rspec spec <optional_path_to_spec>`
+
 Coverage is checked using SimpleCov and can be viewed after running `bundle exec rspec spec` in the `coverage` directory.
 
 ## Future development
